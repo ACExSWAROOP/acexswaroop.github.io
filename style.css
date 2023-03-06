@@ -54,13 +54,13 @@ textarea:focus {
 /* Banner */
 
 #banner {
-  height: 80vh;
+  height: 100vh;
   display:flex;
   align-items:flex-end;
   justify-content:end;
-  flex-direction: column;
+  flex-direction:column;
   background: rgba(0, 0, 0, 0.2) url("https://github.com/ACExSWAROOP/acexswaroop.github.io/blob/main/images/IMG_0093.JPG?raw=true");
-  background-size:auto;
+  background-size:cover;
   background-attachment:scroll;
   background-position:center;
   background-blend-mode:luminosity;
