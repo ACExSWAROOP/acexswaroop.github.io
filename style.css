@@ -280,7 +280,8 @@ section {
   padding: 8px 24px;
   border: 1px solid #fdfdfd;
   transition: 0.4s;
-  display: inline-block;
+  text-align: center;
+  display:block;
   margin-bottom: 24px;
   font-weight:lighter;
   cursor: pointer;
@@ -291,7 +292,6 @@ section {
   background: #2d2d2d;
   text-decoration: none;
   text-align: center;
-  padding: 8px 48px 8px 24px;
   color: #fdfdfd;
 }
 
@@ -511,7 +511,7 @@ footer #social-media-footer ul li:hover a .fa-twitter {
   }
 
   footer #right-footer {
-    background: #eee;
+    background: #373737;
     color: black;
   }
 
@@ -522,7 +522,7 @@ footer #social-media-footer ul li:hover a .fa-twitter {
   footer #social-media-footer a .fa-instagram,
   footer #social-media-footer a .fa-linkedin,
   footer #social-media-footer a .fa-youtube,
-  footer #social-media-footer a .fa-twitter 
+  footer #social-media-footer a .fa-twitter, 
   footer #social-media-footer a .fa-github {
     color: black;
     transition: 0.4s;
@@ -562,6 +562,7 @@ footer #social-media-footer ul li:hover a .fa-twitter {
   .card .card-image img {
     width: 100%;
   }
+  
 }
 
 @media (min-width: 1200px) {
