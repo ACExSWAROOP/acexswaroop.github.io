@@ -256,7 +256,7 @@ section {
 }
 
 .card-image:hover {
-  box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 15px 6px -6px #777;
 }
 
 .card .card-description {
