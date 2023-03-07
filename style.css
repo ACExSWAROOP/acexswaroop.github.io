@@ -262,8 +262,15 @@ section {
   image-resolution:initial;
 }
 
+.down{
+ margin:16px; 
+ align-items:center;
+ justify-content: center;
+ display: flex;
+}
+
 .card-image:hover {
-  box-shadow: 0 15px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #6671d6;
 }
 
 .card .card-description {
@@ -339,7 +346,7 @@ footer #social-media-footer a .fa-linkedin,
 footer #social-media-footer a .fa-youtube,
 footer #social-media-footer a .fa-twitter,
 footer #social-media-footer a .fa-github {
-  color: white;
+  color: #c1c7fe;
   transition: 0.4s;
 }
 
@@ -398,7 +405,7 @@ footer #social-media-footer ul li:hover a .fa-twitter {
 }
 
 .card-meta{
-  color:#fdfdfd;
+  color:#6671d6;
   font-size: 14px;
   padding-left:8px;
   font-family:'Roboto Slab', serif;
@@ -425,7 +432,7 @@ footer #social-media-footer ul li:hover a .fa-twitter {
 
 .pagination a:hover{
   text-decoration: none;
-  border-top:3px solid black;
+  border-top:3px solid #838ff7;
 }
 
 /* Single Blogpost */
@@ -450,7 +457,7 @@ h3 {
 }
 
 #projects .card-image:hover{
-  box-shadow: 0 15px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #6671d6;
 }
 
 /* Style Download button */
@@ -566,14 +573,6 @@ h3 {
     color: black;
   }
 
-  footer #social-media-footer a .fa-instagram,
-  footer #social-media-footer a .fa-linkedin,
-  footer #social-media-footer a .fa-youtube,
-  footer #social-media-footer a .fa-twitter, 
-  footer #social-media-footer a .fa-github {
-    color: black;
-    transition: 0.4s;
-  }
 }
 
 @media (max-width: 600px) {
