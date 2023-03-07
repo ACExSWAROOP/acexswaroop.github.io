@@ -5,6 +5,13 @@ body {
 
 } 
 
+warning{
+  color:red;
+}
+
+ul{
+  color: #fdfdfd;
+}
 h1 {
   padding: 8px;
   background: f0f3f9;
@@ -68,9 +75,9 @@ textarea:focus {
 }
 
 #banner h3 {
-  background: f0f3f9;
+  background: 2d2d2d;
   border-radius: 8px;
-  padding: 0 24px;
+  padding: 0 28px;
   font-size: 20px;
   font-weight: lighter;
 }
@@ -148,14 +155,14 @@ nav ul {
 }
 
 #logo-img:hover {
-  background: #373737;
+  background: #070808;
 }
 
 #menu-icon {
   height: 100%;
   font-size: 28px;
   padding: 0 4px;
-  color: #eee;
+  color: #fdfdfd;
   display: none;
   align-items: center;
 }
@@ -264,21 +271,21 @@ section {
 }
 
 .card-meta-projects{
-  color:#333;
+  color:#fdfdfd;
   font-size:14px;
   padding: 16px;
   font-family:'Roboto Slab', serif;
 }
 
 .card-meta-projects a{
-  color:#333;
+  color:#fdfdfd;
 }
 
 /* Button Read more */
 
 .btn-readmore {
   padding: 8px 24px;
-  border: 1px solid #fdfdfd;
+  border: 1px solid #6671d6;
   transition: 0.4s;
   text-align: center;
   display:block;
@@ -286,13 +293,14 @@ section {
   font-weight:lighter;
   cursor: pointer;
   background: #373737;
+  color: #6671d6;
 }
 
 .btn-readmore:hover {
   background: #2d2d2d;
   text-decoration: none;
   text-align: center;
-  color: #fdfdfd;
+  color: #838ff7;
 }
 
 /* Footer */
@@ -370,11 +378,14 @@ footer #social-media-footer ul li:hover a .fa-twitter {
 
 /* Blog List page */
 
+
 .page-heading{
   font-size:32px;
+  color: #fdfdfd ;
   font-family:'Roboto Condensed', sans-serif;
-  border-left:3px solid #fdfdfd;
-  border-right:3px solid #fdfdfd;
+  font-weight: lighter;
+  border-left:3px solid #2d2d2d;
+  border-right:3px solid #2d2d2d;
   transition: all 0.4s;
   display:inline-block;
   padding:4px 32px;
@@ -383,7 +394,7 @@ footer #social-media-footer ul li:hover a .fa-twitter {
 
 .page-heading:hover{
   padding:4px 48px;
-  background:red;
+  background:#2d2d2d;
 }
 
 .card-meta{
@@ -406,7 +417,7 @@ footer #social-media-footer ul li:hover a .fa-twitter {
 }
 
 .pagination a{
-  border-top: 3px solid white;
+  border-top: 3px solid #6671d6;
   display: inline-block;
   padding:8px 16px;
   transition:0.4s;
@@ -419,6 +430,10 @@ footer #social-media-footer ul li:hover a .fa-twitter {
 
 /* Single Blogpost */
 
+h3 {
+  color: #fdfdfd;
+}
+
 #post-container{
   display: flex;
 }
@@ -427,7 +442,7 @@ footer #social-media-footer ul li:hover a .fa-twitter {
   display: flex;
   flex-direction:column;
   width:70%;
-  border-left:1px solid #999;
+  border:1px groove #6671d6;
 }
 
 #projects .card{
@@ -435,19 +450,51 @@ footer #social-media-footer ul li:hover a .fa-twitter {
 }
 
 #projects .card-image:hover{
-  box-shadow: none;
+  box-shadow: 0 15px 6px -6px #777;
+}
+
+/* Style Download button */
+.downloadbtn {
+  background-color: #838ff7;
+  border: none;
+  color: #fdfdfd;
+  padding: 12px 30px;
+  cursor: pointer;
+  border-radius: 16px;
+  
+}
+
+/* Darker background on mouse-over */
+.downloadbtn:hover {
+  background-color: #6671d6;
 }
 
 /* Sidebar */
 
 #sidebar{
-  background:#333;
+  background:#2d2d2d;
   flex:1;
   padding: 8px 16px;
   color:white;
-  box-shadow: inset 27px 0 51px -18px rgba(0,0,0,0.75);
+  box-shadow: inset 27px 0 51px -18px rgba(24, 22, 22, 0.75);
 }
 
+.open-button{
+  background-color: #838ff7;
+  border: none;
+  color: #fdfdfd;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.open-button:hover{
+  background-color: #6671d6;
+}
 /* Comments section */
 
 #comments-section{
