@@ -118,7 +118,7 @@ nav {
 
 nav a {
   padding: 0 32px;
-  color: #eee;
+  color: #fdfdfd;
   transition: 0.4s;
 }
 
@@ -170,7 +170,7 @@ nav ul {
 /* Search Icon */
 
 #search-icon {
-  color: white;
+  color: #fdfdfd;
   padding: 0 32px;
   cursor: pointer;
   transition: 0.4s;
@@ -184,7 +184,7 @@ nav ul {
 
 #slideout-menu {
   display: none;
-  background: #2d2d2d;
+  background: #373737;
   z-index: 100;
   position: fixed;
   transition: 0.4s;
@@ -207,7 +207,7 @@ nav ul {
 #slideout-menu a {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 20px;
-  color: white;
+  color: #fdfdfd;
 }
 
 #slideout-menu input {
@@ -505,8 +505,9 @@ h3 {
 /* Comments section */
 
 #comments-section{
-  border-top: 2px solid #eee;
+  border-top: 1px ridge #6671d6;
   padding:8px;
+  color: #fdfdfd;
 }
 
 
