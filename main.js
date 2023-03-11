@@ -1,17 +1,11 @@
 const menuIcon = document.getElementById("menu-icon");
 const slideoutMenu = document.getElementById("slideout-menu");
-const searchIcon = document.getElementById("search-icon");
-const searchBox = document.getElementById("searchbox");
-
-searchIcon.addEventListener('click', function () {
-  if (searchBox.style.top == '72px') {
-    searchBox.style.top = '24px';
-    searchBox.style.pointerEvents = 'none';
-  } else {
-    searchBox.style.top = '72px';
-    searchBox.style.pointerEvents = 'auto';
-  }
-});
+const themeToggle1 = document.getElementById('theme-toggle1');
+const themeToggle2 = document.getElementById('theme-toggle2');
+const themeStyle = document.getElementById('theme-style');
+let theme = 'light';
+const body = document.body;
+const logo = document.getElementById('logo');
 
 menuIcon.addEventListener('click', function () {
   if (slideoutMenu.style.opacity == "1") {
@@ -22,3 +16,47 @@ menuIcon.addEventListener('click', function () {
     slideoutMenu.style.pointerEvents = 'auto';
   }
 })
+
+
+// Function to set the theme
+function setTheme(theme) {
+  const themeStyle = document.getElementById('theme-style');
+  const body = document.body;
+  const logo = document.getElementById('logo');
+
+  if (theme === 'light') {
+    themeStyle.setAttribute('href', 'styles-light.css');
+    body.classList.remove('dark-mode');
+    logo.src = 'images/Guru Swarupa light.png';
+  } else if (theme === 'dark') {
+    themeStyle.setAttribute('href', 'styles-dark.css');
+    body.classList.add('dark-mode');
+    logo.src = 'images/Guru Swarupa dark.png';
+  }
+}
+
+// Function to toggle the theme
+function toggleTheme() {
+  const currentTheme = localStorage.getItem('theme');
+  if (currentTheme === 'light') {
+    localStorage.setItem('theme', 'dark');
+    setTheme('dark');
+  } else {
+    localStorage.setItem('theme', 'light');
+    setTheme('light');
+  }
+}
+
+// Set the initial theme
+const currentTheme = localStorage.getItem('theme');
+if (currentTheme) {
+  setTheme(currentTheme);
+} else {
+  setTheme('light');
+}
+
+// Add event listeners to the buttons
+themeToggle1.addEventListener('click', toggleTheme);
+
+themeToggle2.addEventListener('click', toggleTheme);
+

@@ -8,7 +8,13 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
     crossorigin="anonymous">
   <link href="https://fonts.bunny.net/css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles-light.css" id="theme-style">
+    <script>
+        // detect user's preferred color scheme and update theme stylesheet
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.getElementById('theme-style').setAttribute('href', 'styles-dark.css');
+        }
+    </script>
   <title>Guru Swarupa</title>
   <link rel="icon" href="https://lh3.googleusercontent.com/M6PMVChhpNKkfIp5iPof89hEciFMSV7hNNbbQt3KBCzpMqIrML3-DqGljxU4rAC3ugXNlrU3SsXZE9NsjwZtoM8-8tKT6PG5NlUfpEH640pWWdZ9cEi_YSI0eQsSAtjwE2Pecu0LS7UHPSGU40fJnRedJjst1a7ioDJeQDlOTx3sb-tyu63Sa_sIT9YS1E4RZxi3Ta_00X4Zjw4nzqF85GbTRBU2pT3cdLpMi_1kbxuT48w_sRdug4k5kYl3gCwx3NQ3tNf4sNcFhmlSbp6UE89e3BIQgWnYfWyA9kV-nwBav3Vecu0PEXsj31hJmkNlto_QJZ1C8aRxzwG0eCtQh8vKlnY5AVKrv9CN8GhbdGnPp6hExbGmxm9LmR0vyhSiAPHMiA5d6fQ-LEI5rBIVjAo1bBZigJ3g9CRvn9BHveHpzGwk7zBlqiAkDM4VVw1FdE6VObn98k_ZApmgUrZEafTm46YYi51H54za58BEptObZQESork7fKMXbufvZ2zj2WRONMCAWoNDJpOT8m11dSV3Q4r1r0O_h-awTqwMM1BFYGTfX1oNFtrHOeJ0S1lyDQbkP8U58N_DmJT7FU68fuNOVGYKkhE4c8xZhOnLIttI7R7Nopy1nOtUOyRso2A5u4kfuTeK9p1hrfHb1IX1Tp7g-3WvNvFdgHf2bumZ8gZZTqgbgZ8JRyu-lYcw0Yj7Pg_U2URAam2m-Kbzy_vmZ87UVUUxkg0a6DKxX21aNUcEj2P2PJXmL8KrCgwwB6BWWAQdkSC02gABw_CCDspiOa7fTKHMaWV2SL5OC5TaQrQnbLadKsmOs90Frs_h0rraFpQqAfMvGia_hR95Wnbr1SPz_36FXNjlXulwoLtwtukcQEMul98gqCzjzQmW-wlmGai31oVb1GU1EZLbFc5uGnwmGO-aHZ_BH7_kUB_qNUmP=s128-no?authuser=0" type="images/x-icon">
 </head>
@@ -28,16 +34,17 @@
         <li>
             <a href="about.html">About</a>
         </li>
-        <li>
-            <input type="text" placeholder="Search Here">
-        </li>
+        <button id="theme-toggle1">
+            <i class="fas fa-sun"></i>
+            <span>Light mode</span>
+        </button>
       </ul>
   </div>
 
   <nav>
       <div id="logo-img">
           <a href="#">
-              <img src="images\Guru Swarupa.png" alt="Guru swarupa Logo">
+              <img id="logo" src="images/Guru Swarupa light.png" alt="Logo">
           </a>
       </div>
       <div id="menu-icon">
@@ -56,17 +63,12 @@
           <li>
               <a href="about.html">About</a>
           </li>
-          <li>
-              <div id="search-icon">
-                  <i class="fas fa-search"></i>
-              </div>
-          </li>
+          <button id="theme-toggle2">
+            <i class="fas fa-sun"></i>
+            <span>Light mode</span>
+        </button>
       </ul>
   </nav>
-
-  <div id="searchbox">
-      <input type="text" placeholder="Search Here">
-  </div>
 
   <main>
 
@@ -82,18 +84,18 @@
             <img src="images/s,c,t management splash dark.png" alt="Card Image">
           </div>
           <div class="card-description">
-            <h1 style="color: #fdfdfd">README.txt</h1>
+            <h1>README.txt</h1>
             <p>Softhub is a GUI package manager to install other apps in a single click, that helps you to save time.</p>
             <p><h2 style="color: #ff3333;">>>> Requirements</h2>
                 <ul style="color: #ff3333;">- Python 10.0 or above</ul>
                 <ul style="color: #ff3333;">- MySQL server set up in the system</ul></p>
             <p style="color: #ff3333;">Note:- (default admin password="admin")</p>
-            <p><h2 style="color: #fdfdfd;">>>>  This project uses:-</h2>
+            <p><h2>>>>  This project uses:-</h2>
                 <ul>- Python</ul>
                 <ul>- MySQL</ul>
                 <ul>- Tkinter</ul>
                 <ul>- sv_ttk theme by RD Bende</ul></p>
-            <p><h2 style="color: #fdfdfd;">>>>  Features:-</h2>
+            <p><h2>>>>  Features:-</h2>
                 <ul>- User friendly UI</ul>
                 <ul>- themes with light and dark mode.</ul>
                 <ul>- Role based access control. <br><br> i.e admin needs to enter admin password to access the admin access and teacher needs to enter teacher password to get the access into attendance register.</ul>
@@ -119,27 +121,27 @@
         <h2>Latest releases</h2>
         <p style="color:#6671d6;">v1.1</p>
         <a href="https://github.com/ACExSWAROOP/School-management-system/releases/download/v1.1/School.Management.system.setup.exe"><button class=downloadbtn><i class="fa fa-download"></i> Download</button></a>
-        <hr style="height:2px;border-width:0;color:#2d2d2d;background-color:#2d2d2d">  
+        <hr style="height:2px;border-width:0;">  
         <hr style="height:1px;border-width:0;color:#6671d6;background-color:#6671d6">  
-        <hr style="height:2px;border-width:0;color:#2d2d2d;background-color:#2d2d2d">   
+        <hr style="height:2px;border-width:0;">     
         <h2>Source Code</h2>
         <p style="color:#6671d6;">GitHub repository</p>
         <a href="https://github.com/ACExSWAROOP/School-management-system"><button class="open-button">Open</button></a>
-        <hr style="height:2px;border-width:0;color:#2d2d2d;background-color:#2d2d2d">  
+        <hr style="height:2px;border-width:0;">    
         <hr style="height:1px;border-width:0;color:#6671d6;background-color:#6671d6">  
-        <hr style="height:2px;border-width:0;color:#2d2d2d;background-color:#2d2d2d"> 
+        <hr style="height:2px;border-width:0;">   
         <link rel="icon" href="https://github.com/ACExSWAROOP/acexswaroop.github.io/blob/main/images/ae5l0-u0pq3-001.ico.png?raw=true" type="images/x-icon">
         <p style="color:#6671d6;">Note:- <p>(default admin password="admin")</p></p>
         <p style="color:#6671d6;"> Requirements:-<br>
             <p> - Python 10.0 or above <br>
             - MySQL server set up in the system <br></p></p>
-        <hr style="height:2px;border-width:0;color:#2d2d2d;background-color:#2d2d2d">  
+        <hr style="height:2px;border-width:0;">    
         <hr style="height:1px;border-width:0;color:#6671d6;background-color:#6671d6">  
-        <hr style="height:2px;border-width:0;color:#2d2d2d;background-color:#2d2d2d">
+        <hr style="height:2px;border-width:0;">  
     </aside>
     </div>
 
-    <hr style="height:15px;border-width:0;color:#373737;background-color:#373737"> 
+    <hr style="height:15px;border-width:0";> 
 
     <footer>
         <div id="left-footer">
