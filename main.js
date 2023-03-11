@@ -28,10 +28,14 @@ function setTheme(theme) {
     themeStyle.setAttribute('href', 'styles-light.css');
     body.classList.remove('dark-mode');
     logo.src = 'images/Guru Swarupa light.png';
+    themeToggle1.innerHTML = '<i class="fas fa-moon"></i><span>Light mode</span>';
+    themeToggle2.innerHTML = '<i class="fas fa-moon"></i><span>Light mode</span>';
   } else if (theme === 'dark') {
     themeStyle.setAttribute('href', 'styles-dark.css');
     body.classList.add('dark-mode');
     logo.src = 'images/Guru Swarupa dark.png';
+    themeToggle1.innerHTML = '<i class="fas fa-sun"></i><span>Dark mode</span>';
+    themeToggle2.innerHTML = '<i class="fas fa-sun"></i><span>Dark mode</span>';
   }
 }
 
@@ -60,3 +64,48 @@ themeToggle1.addEventListener('click', toggleTheme);
 
 themeToggle2.addEventListener('click', toggleTheme);
 
+/*
+themeToggle1.addEventListener('click', function() {
+  if (theme === 'light') {
+    themeStyle.setAttribute('href', 'styles-dark.css');
+    theme = 'dark';
+  } else {
+    themeStyle.setAttribute('href', 'styles-light.css');
+    theme = 'light';
+  }
+})
+
+themeToggle1.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+  if (body.classList.contains('dark-mode')) {
+    themeToggle1.innerHTML = '<i class="fas fa-moon"></i><span>Dark mode</span>';
+    logo.src = 'images/Guru Swarupa dark.png';
+  } else {
+    themeToggle1.textContent = 'Light mode';
+    themeToggle1.innerHTML = '<i class="fas fa-sun"></i><span>Light mode</span>';
+    logo.src = 'images/Guru Swarupa light.png';
+  }
+});
+
+themeToggle2.addEventListener('click', function() {
+  if (theme === 'light') {
+    themeStyle.setAttribute('href', 'styles-dark.css');
+    theme = 'dark';
+  } else {
+    themeStyle.setAttribute('href', 'styles-light.css');
+    theme = 'light';
+  }
+})
+
+themeToggle2.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+  if (body.classList.contains('dark-mode')) {
+    themeToggle2.innerHTML = '<i class="fas fa-moon"></i><span>Dark mode</span>';
+    logo.src = 'images/Guru Swarupa dark.png';
+  } else {
+    themeToggle2.textContent = 'Light mode';
+    themeToggle2.innerHTML = '<i class="fas fa-sun"></i><span>Light mode</span>';
+    logo.src = 'images/Guru Swarupa light.png';
+  }
+});
+*/
